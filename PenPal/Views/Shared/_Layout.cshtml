@@ -8,26 +8,25 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/Content/font-awesome.css" />
 </head>
-<body>
+<body class="">
     <!-- Image and text -->
     <!--Navbar-->
-    <nav class="navbar navbar-light light-blue lighten-4">
+    <nav class="navbar navbar-light purple lighten-4 ">
 
         <!-- Navbar brand -->
         <a class="navbar-brand" href="#">Navbar</a>
 
         <!-- Collapse button -->
-        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-                aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="dark-blue-text">
-                <i class="fas fa-bars fa-1x"></i>
-            </span>
+        <button class="navbar-toggler toggler-example purple darken-3" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent41" aria-controls="navbarSupportedContent41" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent41">
 
             <!-- Links -->
             <ul class="navbar-nav mr-auto">
@@ -50,7 +49,7 @@
     <!--/.Navbar-->
 
     <div class="card">
-        <div class="card-body">
+        <div class="card-body bg-dark">
 
             @RenderBody()
         </div>
