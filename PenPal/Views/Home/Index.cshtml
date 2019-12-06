@@ -17,6 +17,16 @@
                     <span>/</span>
                     <span>Dashboard</span>
                 </h4>
+                @if (Context.User.Identity.IsAuthenticated)
+                {
+                    // Finds user name and says Hi
+                    <p>Hi :</p> @Context.User.Identity.Name;
+                }
+                else
+                {
+                    // It is anonymous user, say hi to guest
+                    <p> Hi Guest</p>
+                }
 
                 <form class="d-flex justify-content-center">
                     <!-- Default input -->
